@@ -12,7 +12,7 @@ struct CreativityTab: View {
         ZStack {
             Color(Color.blue.opacity(0.2))
                 .ignoresSafeArea(edges: .all)
-         Text("Welcome to the creativity tab!")
+            Text("Welcome to the creativity tab!")
                 .font(.custom("Arial", size: 30))
                 .fontWeight(.bold)
                 .foregroundColor(Color.white)
@@ -22,36 +22,16 @@ struct CreativityTab: View {
                 .font(.custom("Arial", size: 13))
                 .padding(.bottom, 575.0)
             
-            VStack {
-                
-                HStack {
-                    Button("Learn") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                    }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    Button("Create") {
-                    }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    
-                }
-                .padding(.bottom, 410.0)
-                
-                
-                
-
-                
-                
-            }
+            
+            
+            
+        }
             
             
         }
         
     }
-}
+
 
 #Preview {
     CreativityTab()
