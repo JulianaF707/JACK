@@ -1,5 +1,7 @@
 import SwiftUI
 struct ContentView: View {
+    @State private var showingPopover = false
+    
     var body: some View {
         NavigationStack {
             VStack (spacing: 0.0){
@@ -19,11 +21,19 @@ struct ContentView: View {
                             HStack {
                                 Spacer()
                                 NavigationLink(destination: MenuBar()) {
-                                    Image("menu2")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 60, height: 60)
-                                        .padding()
+                                    
+                                    Button (""){
+                                                showingPopover = true
+                                            }
+                                            .popover(isPresented: $showingPopover) {
+                                                MenuBar()
+                                            }
+                                        Image("menu2")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 60, height: 60)
+                                            .padding()
+
                                 }
                             } // end of HStack
                             Spacer()
