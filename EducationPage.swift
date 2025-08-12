@@ -9,6 +9,7 @@ struct EducationPage: View {
             VStack {
                 Text("Education")
                     .font(.largeTitle)
+                    .fontWeight(.bold)
                 Spacer()
                     .frame(height:170)
                 HStack {
@@ -18,11 +19,13 @@ struct EducationPage: View {
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
+                    .foregroundColor(Color.black)
                     Button("Technology and Engineering") {
                     }
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
+                    .foregroundColor(Color.black)
                 }
                 Spacer()
                     .frame(height:25)
@@ -33,18 +36,21 @@ struct EducationPage: View {
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
+                    .foregroundColor(Color.black)
                     Button("English") {
                         /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                     }
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
+                    .foregroundColor(Color.black)
                     Button("History") {
                         /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                     }
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
+                    .foregroundColor(Color.black)
                 }
                 Spacer()
                     .frame(height:140)

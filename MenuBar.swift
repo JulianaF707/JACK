@@ -5,7 +5,9 @@ struct MenuBar: View {
             Color(red: 0.0, green: 0.39, blue: 0.0)
                 .ignoresSafeArea()
             VStack (alignment: .leading, spacing: 10){
-                Text("Education")
+                NavigationLink(destination: EducationPage()){
+                    Text("Education")
+                }
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
