@@ -12,17 +12,19 @@ struct CreativityTab: View {
         ZStack {
             Color(Color.blue.opacity(0.2))
                 .ignoresSafeArea(edges: .all)
-         Text("Welcome to the creativity tab!")
+            VStack {
+            Text("Welcome to the creativity tab!")
                 .font(.custom("Arial", size: 30))
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
                 .multilineTextAlignment(.center)
-                .padding(.bottom, 700.0)
+            Spacer()
+                .frame(height: 60)
             Text("Leaf & learn is dedicated to teaching you more than just common education. Use the creativity tab to explore your own artistic interest! ")
-                .font(.custom("Arial", size: 13))
-                .padding(.bottom, 575.0)
-            
-            VStack {
+                .font(.custom("Arial", size: 18))
+                .font(.title2)
+            Spacer()
+                .frame(height: 20)
                 
                 HStack {
                     Button("Learn") {
