@@ -10,10 +10,10 @@ import SwiftUI
 struct Goals: View {
     var body: some View {
         Text("Goals")
-            .font(.title)
+            .font(.largeTitle)
             .fontWeight(.bold)
         Spacer()
-            .frame(height: 150)
+            .frame(height: 650)
     }
 }
 
