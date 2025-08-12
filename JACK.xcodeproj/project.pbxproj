@@ -12,6 +12,10 @@
 		BD25BFFC2E4BAC6A00154F2A /* TieDye.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25BFFB2E4BAC6A00154F2A /* TieDye.swift */; };
 		BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */; };
 		BD2BF4422E4B92AD00AD4DE2 /* EducationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */; };
+		BD2BF47A2E4BB50C00AD4DE2 /* SciencePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF4792E4BB50C00AD4DE2 /* SciencePage.swift */; };
+		BD2BF47C2E4BB52100AD4DE2 /* TEPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF47B2E4BB52100AD4DE2 /* TEPage.swift */; };
+		BD2BF47E2E4BB54F00AD4DE2 /* MathPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF47D2E4BB54F00AD4DE2 /* MathPage.swift */; };
+		BD2BF4802E4BB55D00AD4DE2 /* EnglishPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF47F2E4BB55D00AD4DE2 /* EnglishPage.swift */; };
 		BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */; };
 		BDF0ED322E4BA9810070976F /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0ED312E4BA9810070976F /* Goals.swift */; };
 /* End PBXBuildFile section */
@@ -23,6 +27,10 @@
 		BD2BF41F2E4B79B600AD4DE2 /* JACK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationPage.swift; sourceTree = "<group>"; };
+		BD2BF4792E4BB50C00AD4DE2 /* SciencePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciencePage.swift; sourceTree = "<group>"; };
+		BD2BF47B2E4BB52100AD4DE2 /* TEPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEPage.swift; sourceTree = "<group>"; };
+		BD2BF47D2E4BB54F00AD4DE2 /* MathPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathPage.swift; sourceTree = "<group>"; };
+		BD2BF47F2E4BB55D00AD4DE2 /* EnglishPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishPage.swift; sourceTree = "<group>"; };
 		BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityTab.swift; sourceTree = "<group>"; };
 		BDF0ED312E4BA9810070976F /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,11 +57,15 @@
 		BD2BF4162E4B79B600AD4DE2 = {
 			isa = PBXGroup;
 			children = (
+				BD2BF4792E4BB50C00AD4DE2 /* SciencePage.swift */,
+				BD2BF47B2E4BB52100AD4DE2 /* TEPage.swift */,
 				BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */,
 				BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */,
 				BD25BFF32E4BA83E00154F2A /* FriendshipBraceletLesson.swift */,
 				BD25BFFB2E4BAC6A00154F2A /* TieDye.swift */,
 				BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */,
+				BD2BF47D2E4BB54F00AD4DE2 /* MathPage.swift */,
+				BD2BF47F2E4BB55D00AD4DE2 /* EnglishPage.swift */,
 				BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */,
 				BDF0ED312E4BA9810070976F /* Goals.swift */,
 				BD2BF4212E4B79B600AD4DE2 /* JACK */,
@@ -144,9 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF0ED322E4BA9810070976F /* Goals.swift in Sources */,
+				BD2BF4802E4BB55D00AD4DE2 /* EnglishPage.swift in Sources */,
 				BD25BFEC2E4B966100154F2A /* BubbleDrawingLesson.swift in Sources */,
 				BD25BFFC2E4BAC6A00154F2A /* TieDye.swift in Sources */,
 				BD25BFF42E4BA83E00154F2A /* FriendshipBraceletLesson.swift in Sources */,
+				BD2BF47C2E4BB52100AD4DE2 /* TEPage.swift in Sources */,
+				BD2BF47A2E4BB50C00AD4DE2 /* SciencePage.swift in Sources */,
+				BD2BF47E2E4BB54F00AD4DE2 /* MathPage.swift in Sources */,
 				BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */,
 				BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */,
 				BD2BF4422E4B92AD00AD4DE2 /* EducationPage.swift in Sources */,
