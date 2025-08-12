@@ -47,7 +47,6 @@ struct ContentView: View {
                     .padding(.top, 30)
                     .padding(.horizontal, 30)
                 } // end of ZStack
-                
             } // end of VStack
         }
         
