@@ -11,6 +11,7 @@
 		BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */; };
 		BD2BF4422E4B92AD00AD4DE2 /* EducationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */; };
 		BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */; };
+		BDF0ED322E4BA9810070976F /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0ED312E4BA9810070976F /* Goals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationPage.swift; sourceTree = "<group>"; };
 		BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityTab.swift; sourceTree = "<group>"; };
+		BDF0ED312E4BA9810070976F /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -47,6 +49,7 @@
 				BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */,
 				BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */,
 				BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */,
+				BDF0ED312E4BA9810070976F /* Goals.swift */,
 				BD2BF4212E4B79B600AD4DE2 /* JACK */,
 				BD2BF4202E4B79B600AD4DE2 /* Products */,
 			);
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF0ED322E4BA9810070976F /* Goals.swift in Sources */,
 				BD25BFEC2E4B966100154F2A /* BubbleDrawingLesson.swift in Sources */,
 				BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */,
 				BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */,
