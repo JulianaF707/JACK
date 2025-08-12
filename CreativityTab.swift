@@ -15,7 +15,7 @@ struct CreativityTab: View {
          Text("Welcome to the creativity tab!")
                 .font(.custom("Arial", size: 30))
                 .fontWeight(.bold)
-                .foregroundColor(Color.white)
+                .foregroundColor(Color.black)
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 700.0)
             Text("Leaf & learn is dedicated to teaching you more than just common education. Use the creativity tab to explore your own artistic interest! ")
