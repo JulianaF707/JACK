@@ -48,9 +48,12 @@ struct ContentView: View {
                     .padding(.horizontal, 30)
                 } // end of ZStack
             } // end of VStack
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
+            
         }
         
-            
     }
 }
 #Preview {
