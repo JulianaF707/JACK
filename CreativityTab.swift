@@ -12,7 +12,7 @@ struct CreativityTab: View {
         ZStack {
             Color(Color.blue.opacity(0.2))
                 .ignoresSafeArea(edges: .all)
-         Text("Welcome to the creativity tab!")
+            Text("Welcome to the creativity tab!")
                 .font(.custom("Arial", size: 30))
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
@@ -22,36 +22,49 @@ struct CreativityTab: View {
                 .font(.custom("Arial", size: 13))
                 .padding(.bottom, 575.0)
             
-            VStack {
-                
-                HStack {
-                    Button("Learn") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                    }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    Button("Create") {
-                    }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
+           
+            ScrollView(.horizontal, showsIndicators: false) {
+                VStack(spacing:-150) {
                     
+                    
+                    HStack(spacing:16) {
+                        Image("FriendshipBracelet")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100, height: 100)
+                        
+                        Image("BubbleImage")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 170, height: 400)
+                    }
+                    HStack(spacing:45) {
+                        Text("Braclets")
+                        Text("Bubble Art")
+                    }
+                    
+                    .padding(.bottom, 150.0)
+                    .padding(.trailing, 70)
                 }
-                .padding(.bottom, 410.0)
-                
-                
-                
-
-                
+                .padding(.bottom, 200.0)
                 
             }
             
             
+            
         }
         
-    }
-}
+       
+                    }
+                }
+            
+        
+            
+            
+        
+        
+    
+
 
 #Preview {
     CreativityTab()
