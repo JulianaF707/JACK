@@ -41,6 +41,10 @@ struct CreativityTab: View {
                 .padding(.bottom, 410.0)
                 
                 
+                
+
+                
+                
             }
             
             
