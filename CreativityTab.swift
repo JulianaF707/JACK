@@ -51,11 +51,27 @@ struct CreativityTab: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 170, height: 400)
+                        Image("bleachArt")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 300)
+                        Image("Origami")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 170, height: 300)
+                        Image("BookMark")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 70, height: 300)
 
                     }
                     HStack(spacing:45) {
                         Text("Braclets")
+                            
                         Text("Bubble Art")
+                        Text("Bleach Art")
+                        Text("origami")
+                        Text("Bookmarks")
                     }
                     
                     .padding(.bottom, 150.0)
