@@ -9,11 +9,34 @@ import SwiftUI
 
 struct Goals: View {
     var body: some View {
-        Text("Goals")
-            .font(.largeTitle)
-            .fontWeight(.bold)
-        Spacer()
-            .frame(height: 650)
+        ZStack {
+            Color.blue.opacity(0.2)
+                .ignoresSafeArea(edges: .all)//background color
+            
+            VStack {
+                HStack {
+                    Text("Goals")
+                        .font(.system(size:40))
+                        .fontWeight(.bold)
+        
+                    Spacer()
+                    Button {
+                        
+                    } label: {
+                        Text ("+")
+                            .font(.title)
+                    }//end of button
+                }//end of 1st HStack
+                .padding()
+                Spacer()
+        
+                
+                
+                
+                
+            }//end of VStack
+            
+        }//end of ZStack
     }
 }
 
