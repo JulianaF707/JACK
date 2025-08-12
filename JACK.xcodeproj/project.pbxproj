@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD25BFEC2E4B966100154F2A /* BubbleDrawingLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */; };
 		BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */; };
-		BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */; };
 		BD2BF4422E4B92AD00AD4DE2 /* EducationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */; };
+		BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleDrawingLesson.swift; sourceTree = "<group>"; };
 		BD2BF41F2E4B79B600AD4DE2 /* JACK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
-
-		BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityTab.swift; sourceTree = "<group>"; };
 		BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationPage.swift; sourceTree = "<group>"; };
+		BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */,
+				BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */,
 				BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */,
 				BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */,
 				BD2BF4212E4B79B600AD4DE2 /* JACK */,
@@ -132,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD25BFEC2E4B966100154F2A /* BubbleDrawingLesson.swift in Sources */,
 				BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */,
 				BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */,
 				BD2BF4422E4B92AD00AD4DE2 /* EducationPage.swift in Sources */,
