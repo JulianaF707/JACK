@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD25BFEC2E4B966100154F2A /* BubbleDrawingLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */; };
 		BD25BFF42E4BA83E00154F2A /* FriendshipBraceletLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25BFF32E4BA83E00154F2A /* FriendshipBraceletLesson.swift */; };
+		BD25BFFC2E4BAC6A00154F2A /* TieDye.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25BFFB2E4BAC6A00154F2A /* TieDye.swift */; };
 		BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */; };
 		BD2BF4422E4B92AD00AD4DE2 /* EducationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */; };
 		BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleDrawingLesson.swift; sourceTree = "<group>"; };
 		BD25BFF32E4BA83E00154F2A /* FriendshipBraceletLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipBraceletLesson.swift; sourceTree = "<group>"; };
+		BD25BFFB2E4BAC6A00154F2A /* TieDye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieDye.swift; sourceTree = "<group>"; };
 		BD2BF41F2E4B79B600AD4DE2 /* JACK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationPage.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 				BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */,
 				BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */,
 				BD25BFF32E4BA83E00154F2A /* FriendshipBraceletLesson.swift */,
+				BD25BFFB2E4BAC6A00154F2A /* TieDye.swift */,
 				BD2BF4412E4B92AD00AD4DE2 /* EducationPage.swift */,
 				BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */,
 				BDF0ED312E4BA9810070976F /* Goals.swift */,
@@ -142,6 +145,7 @@
 			files = (
 				BDF0ED322E4BA9810070976F /* Goals.swift in Sources */,
 				BD25BFEC2E4B966100154F2A /* BubbleDrawingLesson.swift in Sources */,
+				BD25BFFC2E4BAC6A00154F2A /* TieDye.swift in Sources */,
 				BD25BFF42E4BA83E00154F2A /* FriendshipBraceletLesson.swift in Sources */,
 				BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */,
 				BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */,
