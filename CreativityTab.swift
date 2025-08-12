@@ -12,13 +12,27 @@ struct CreativityTab: View {
         ZStack {
             Color(Color.blue.opacity(0.2))
                 .ignoresSafeArea(edges: .all)
+
+            VStack {
+
             Text("Welcome to the creativity tab!")
                 .font(.custom("Arial", size: 30))
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
                 .multilineTextAlignment(.center)
-                .padding(.bottom, 700.0)
+            Spacer()
+                .frame(height: 60)
             Text("Leaf & learn is dedicated to teaching you more than just common education. Use the creativity tab to explore your own artistic interest! ")
+
+                .font(.custom("Arial", size: 18))
+                .font(.title2)
+            Spacer()
+                .frame(height: 20)
+                
+                HStack {
+                    Button("Learn") {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+
                 .font(.custom("Arial", size: 13))
                 .padding(.bottom, 575.0)
             
@@ -37,6 +51,7 @@ struct CreativityTab: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 170, height: 400)
+
                     }
                     HStack(spacing:45) {
                         Text("Braclets")
