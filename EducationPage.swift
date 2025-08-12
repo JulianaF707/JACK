@@ -13,39 +13,39 @@ struct EducationPage: View {
                 Spacer()
                     .frame(height:170)
                 HStack {
-                    Button("Sciences") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    NavigationLink(destination: SciencePage()){
+                        Text("Sciences")
                     }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .foregroundColor(Color.black)
-                    Button("Technology and Engineering") {
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .foregroundColor(Color.black)
+                    NavigationLink(destination: TEPage()){
+                        Text("Technology & Engineering")
                     }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .foregroundColor(Color.black)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .foregroundColor(Color.black)
                 }
                 Spacer()
                     .frame(height:25)
                 HStack {
-                    Button("Mathematics") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    NavigationLink(destination: MathPage()){
+                        Text("Mathematics")
                     }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .foregroundColor(Color.black)
-                    Button("English") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .foregroundColor(Color.black)
+                    NavigationLink(destination: EnglishPage()){
+                        Text("English")
                     }
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .foregroundColor(Color.black)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .foregroundColor(Color.black)
                     Button("History") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                     }
                     .padding()
                     .background(Color.white)
