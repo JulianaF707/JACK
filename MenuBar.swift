@@ -11,7 +11,9 @@ struct MenuBar: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
-                Text("Creativity")
+                NavigationLink(destination: CreativityTab()){
+                    Text("Creativity")
+                }
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
