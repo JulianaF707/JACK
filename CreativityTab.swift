@@ -28,7 +28,8 @@ struct CreativityTab: View {
                         .multilineTextAlignment(.center)
                         .font(.body)
                         .padding(.horizontal)
-
+                    Text("Click the Learn button for art education")
+                        .foregroundColor(Color(hue: 0.587, saturation: 0.447, brightness: 0.973))
                     // Learn Button
                     NavigationLink(destination: ArtHistory2()) {
                         Text("Learn")
@@ -41,8 +42,9 @@ struct CreativityTab: View {
                             .padding(.horizontal, 50)
                     }
 
-                    Text("Click the Learn button for art education")
+                    Text("Click and scroll to explore more art lessons!")
                         .foregroundColor(Color(hue: 0.587, saturation: 0.447, brightness: 0.973))
+                    
 
                     // Horizontal ScrollView with tappable images
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -93,8 +95,10 @@ struct CreativityTab: View {
                         }
                         .padding(.horizontal)
                         .padding(.bottom, 50)
+                        
                     }
-
+                   
+                        
                     Spacer()
                 }
                 .padding()
