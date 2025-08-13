@@ -10,7 +10,6 @@ import SwiftData
 struct Goals: View {
     @State private var showNewGoal = false
     @Query var theGoals: [GoalItem]
-    @Environment(\.modelContext) var modelContext
     var body: some View {
         ZStack {
             Color.blue.opacity(0.2)
@@ -44,14 +43,14 @@ struct Goals: View {
             }//end of VStack
            
             if showNewGoal {
-                NewGoalsView(goalItem: GoalItem(title: ""))
+                NewGoalsView(showNewGoal: $showNewGoal, goalItem : GoalItem(title: ""))
             }
             Spacer()
-//            List{
-//                ForEach(theGoals){ GoalItem in
-//                    Text(GoalItem.title)
-//                }
-//            }
+            List{
+                ForEach(theGoals){ GoalItem in
+                    Text(GoalItem.title)
+                }
+            }
         
         }//end of ZStack
         
