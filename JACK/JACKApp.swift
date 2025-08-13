@@ -12,7 +12,7 @@ struct JACKApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .modelContainer(for: GoalItem.self)
-        }
+                
+        }.modelContainer(for: GoalItem.self)
     }
 }
