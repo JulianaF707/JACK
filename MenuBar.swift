@@ -17,6 +17,12 @@ struct MenuBar: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
+                NavigationLink(destination: Goals()){
+                    Text("Goals")
+                }
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
                 NavigationLink(destination: LogInPage()) {
                     Text("Log In")
                 }
@@ -25,12 +31,6 @@ struct MenuBar: View {
                     .foregroundColor(Color.white)
                 NavigationLink(destination: SignInPage()) {
                     Text("Sign In")
-                }
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.white)
-                NavigationLink(destination: Goals()){
-                    Text("Goals")
                 }
                     .font(.title3)
                     .fontWeight(.semibold)
