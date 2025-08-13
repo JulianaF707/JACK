@@ -53,8 +53,8 @@ struct ContentView: View {
                 } // end of ZStack
             } // end of VStack
             
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
+            //.navigationTitle("Home")
+            //.navigationBarTitleDisplayMode(.inline)
             
         }
         
