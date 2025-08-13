@@ -24,6 +24,7 @@ struct MenuBar: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
                 NavigationLink(destination: SignInPage()) {
+                    Text("Create Account")
                     Text("Sign In")
                 }
                     .font(.title3)
