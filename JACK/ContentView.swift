@@ -58,8 +58,9 @@ struct ContentView: View {
             //.navigationBarTitleDisplayMode(.inline)
             
         }
-        
+        .navigationBarBackButtonHidden(true)
     }
+
 }
 #Preview {
     ContentView()
