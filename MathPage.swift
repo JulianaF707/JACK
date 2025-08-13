@@ -1,10 +1,3 @@
-//
-//  MathPage.swift
-//  JACK
-//
-//  Created by Scholar on 8/12/25.
-//
-
 import SwiftUI
 
 struct MathPage: View {
@@ -19,8 +12,28 @@ struct MathPage: View {
                     .fontWeight(.bold)
                 Spacer()
                     .frame(height:170)
-                
+                Text("what is 2+2?")
+                TextField("Put your answer here", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    .padding(20)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                HStack {
+                    Button("Shuffle") {
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .foregroundColor(Color.black)
+                    Button("Reveal answer") {
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .foregroundColor(Color.black)
+                }
+                Text("")
             }
+            .padding()
         }
     }
 }
