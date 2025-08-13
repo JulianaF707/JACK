@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
-
+import SwiftData
 struct NewGoalsView: View {
+    @Bindable var goalItem: GoalItem
     var body: some View {
         VStack {
             Text("Set goal here:")
                 .font(.title)
                 .fontWeight(.bold)
-            TextField("Enter goal description...", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            TextField("Enter goal description...", text: $goalItem.title, axis:.vertical)
                 .padding()
                 .background(Color(.systemGroupedBackground))
                 .cornerRadius(15)
@@ -29,5 +30,5 @@ struct NewGoalsView: View {
 }
 
 #Preview {
-    NewGoalsView()
+    NewGoalsView(goalItem: GoalItem(title: ""))
 }

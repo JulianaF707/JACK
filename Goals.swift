@@ -44,7 +44,7 @@ struct Goals: View {
             }//end of VStack
            
             if showNewGoal {
-                    NewGoalsView()
+                NewGoalsView(goalItem: GoalItem(title: ""))
             }
             Spacer()
 //            List{
