@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Goals: View {
+    @State private var showNewGoal = false
     var body: some View {
         ZStack {
             Color.blue.opacity(0.2)
@@ -22,6 +23,9 @@ struct Goals: View {
         
                     Spacer()
                     Button {
+                        withAnimation {
+                            showNewGoal = true
+                        }
                         
                     } label: {
                         Text ("+")
@@ -36,7 +40,9 @@ struct Goals: View {
                 
                 
             }//end of VStack
-            
+            if showNewGoal {
+                NewGoalsView()
+            }
         }//end of ZStack
     }
 }
