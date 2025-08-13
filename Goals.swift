@@ -38,14 +38,24 @@ struct Goals: View {
         
                 
                 
-                if showNewGoal {
-                    NewGoalsView(showNewGoal: $showNewGoal, goalItem : GoalItem(title: ""))
-                }
-                Spacer()
-                List{
-                    ForEach(theGoals){ GoalItem in
-                        Text(GoalItem.title)
+                if theGoals.isEmpty {
+                    VStack(spacing: 8) {
+                        Spacer()
+                        Text("No goals yet").font(.headline)
+                        Text("Tap + to add your first goal.")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                        Spacer()
+                        }
+                }else {
+                    List {
+                        ForEach(theGoals) { goal in        // <- avoid shadowing the type name
+                            Text(goal.title)
+                        }
                     }
+                    .listStyle(.plain)
+                    .scrollContentBackground(.hidden)      // <- key: remove white background
+                    .background(Color.clear)
                 }
                 
             }//end of VStack
@@ -53,7 +63,9 @@ struct Goals: View {
             
         
         }//end of ZStack
-        
+        .sheet(isPresented: $showNewGoal) {
+            NewGoalsView(showNewGoal: $showNewGoal, goalItem: GoalItem(title: ""))
+        }
     }
 }
 
