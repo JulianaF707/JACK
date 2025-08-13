@@ -38,19 +38,19 @@ struct Goals: View {
         
                 
                 
-                
+                if showNewGoal {
+                    NewGoalsView(showNewGoal: $showNewGoal, goalItem : GoalItem(title: ""))
+                }
+                Spacer()
+                List{
+                    ForEach(theGoals){ GoalItem in
+                        Text(GoalItem.title)
+                    }
+                }
                 
             }//end of VStack
            
-            if showNewGoal {
-                NewGoalsView(showNewGoal: $showNewGoal, goalItem : GoalItem(title: ""))
-            }
-            Spacer()
-            List{
-                ForEach(theGoals){ GoalItem in
-                    Text(GoalItem.title)
-                }
-            }
+            
         
         }//end of ZStack
         

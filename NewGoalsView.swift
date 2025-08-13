@@ -31,8 +31,8 @@ struct NewGoalsView: View {
         }//end of VStack
     }
     func addGoal() {
-        let goal = GoalItem(title: goalItem.title)
-        modelContext.insert(goal)
+        let goalItem = GoalItem(title: goalItem.title)
+        modelContext.insert(goalItem)
     }//end of func
 }//end of struct
 
