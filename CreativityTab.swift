@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CreativityTab: View {
+    // Show alert when upload is pressed
+    @State private var showAlert = false
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -28,8 +31,10 @@ struct CreativityTab: View {
                         .multilineTextAlignment(.center)
                         .font(.body)
                         .padding(.horizontal)
+
                     Text("Click the Learn button for art education")
                         .foregroundColor(Color(hue: 0.587, saturation: 0.447, brightness: 0.973))
+
                     // Learn Button
                     NavigationLink(destination: ArtHistory2()) {
                         Text("Learn")
@@ -44,9 +49,8 @@ struct CreativityTab: View {
 
                     Text("Click and scroll to explore more art lessons!")
                         .foregroundColor(Color(hue: 0.587, saturation: 0.447, brightness: 0.973))
-                    
 
-                    // Horizontal ScrollView with tappable images
+                    // Scrollable Art Images
                     ScrollView(.horizontal, showsIndicators: false) {
                         VStack(spacing: 20) {
                             HStack(spacing: 16) {
@@ -64,24 +68,20 @@ struct CreativityTab: View {
                                         .frame(width: 140, height: 140)
                                 }
 
-                               
-                                    Image("bleachArt")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 140, height: 140)
+                                Image("bleachArt")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 140, height: 140)
 
-                                
-                                    Image("Origami")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 140, height: 140)
-                              
+                                Image("Origami")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 140, height: 140)
 
-                                    Image("BookMark")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 140, height: 140)
-                                
+                                Image("BookMark")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 140, height: 140)
 
                                 NavigationLink(destination: TieDye()) {
                                     Image("tiedye2")
@@ -90,15 +90,26 @@ struct CreativityTab: View {
                                         .frame(width: 140, height: 140)
                                 }
                             }
-
-                           
                         }
                         .padding(.horizontal)
-                        .padding(.bottom, 50)
-                        
+                        .padding(.bottom, 30)
                     }
-                   
+
+                    // Upload Button (Dummy)
+                    Button(action: {
                         
+                    }) {
+                        Text("Upload Your Art")
+                            .font(.headline)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .padding(.horizontal, 50)
+                    }
+                    
+
                     Spacer()
                 }
                 .padding()
@@ -107,10 +118,6 @@ struct CreativityTab: View {
     }
 }
 
-
-   
-
-
 #Preview {
-  CreativityTab()
+    CreativityTab()
 }
