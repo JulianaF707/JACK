@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct CreativityTab: View {
-    // Show alert when upload is pressed
-    @State private var showAlert = false
+    @State private var showActionSheet = false
+    @State private var showImagePicker = false
+    @State private var showDocumentPicker = false
+    @State private var selectedImage: UIImage?
+    @State private var selectedFileURL: URL?
+    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
 
     var body: some View {
         NavigationStack {
@@ -97,16 +101,30 @@ struct CreativityTab: View {
 
                     // Upload Button (Dummy)
                     Button(action: {
-                        
+                        showActionSheet = true
                     }) {
                         Text("Upload Your Art")
-                            .font(.headline)
-                            .padding()
                             .frame(maxWidth: .infinity)
+                            .padding()
                             .background(Color.green)
                             .foregroundColor(.white)
                             .cornerRadius(10)
-                            .padding(.horizontal, 50)
+                    }
+                    .actionSheet(isPresented: $showActionSheet) {
+                        ActionSheet(
+                            title: Text("Upload"),
+                            message: Text("Choose a source"),
+                            buttons: [
+                                .default(Text("Photo")) {
+                                    sourceType = .photoLibrary
+                                    showImagePicker = true
+                                },
+                                .default(Text("File")) {
+                                    showDocumentPicker = true
+                                },
+                                .cancel()
+                            ]
+                        )
                     }
                     
 
