@@ -68,7 +68,6 @@ struct CreativityTab: View {
                             }
                             HStack(spacing:45) {
                                 Text("Braclets")
-                                
                                 Text("Bubble Art")
                                 Text("Bleach Art")
                                 Text("Origami")
@@ -76,7 +75,7 @@ struct CreativityTab: View {
                             }
                             
                             .padding(.bottom, 150.0)
-                            .padding(.trailing, 70)
+                            .padding(.trailing, 30)
                         }
                         .padding(.bottom, 200.0)
                         
