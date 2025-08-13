@@ -10,6 +10,7 @@ import SwiftData
 struct Goals: View {
     @State private var showNewGoal = false
     @Query var theGoals: [GoalItem]
+    @Environment(\.modelContext) var modelContext
     var body: some View {
         ZStack {
             Color.blue.opacity(0.2)
@@ -35,8 +36,6 @@ struct Goals: View {
                 }//end of 1st HStack
                 .padding()
                 Spacer()
-        
-                
                 
                 if theGoals.isEmpty {
                     VStack(spacing: 8) {
@@ -68,6 +67,16 @@ struct Goals: View {
         }
     }
 }
+
+/*
+func deleteToDo(at offsets: IndexSet) {
+    for offset in offsets {
+        let theGoals = GoalItem[title: offset]
+        ModelContext.delete(theGoals)
+    }
+}
+ */
+
 
 #Preview {
     Goals()
