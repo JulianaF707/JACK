@@ -15,6 +15,7 @@ struct Goals: View {
             
             VStack {
                 HStack {
+                    Text("                            ")
                     Text("Goals")
                         .font(.system(size:40))
                         .fontWeight(.bold)
