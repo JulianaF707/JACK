@@ -21,11 +21,13 @@ struct MenuBar: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
-                Text("Goals")
+                NavigationLink(destination: Goals()){
+                    Text("Goals")
+                }
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
-            } // endo f VStack
+            } // end of VStack
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             .padding(.leading, 20)
         } // end of ZStack
