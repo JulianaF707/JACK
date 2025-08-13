@@ -51,6 +51,7 @@ struct Goals: View {
                         ForEach(theGoals) { goal in        // <- avoid shadowing the type name
                             Text(goal.title)
                         }
+                        .onDelete(perform: deleteGoal)
                     }
                     .listStyle(.plain)
                     .scrollContentBackground(.hidden)      // <- key: remove white background
@@ -66,16 +67,15 @@ struct Goals: View {
             NewGoalsView(showNewGoal: $showNewGoal, goalItem: GoalItem(title: ""))
         }
     }
-}
-
-/*
-func deleteToDo(at offsets: IndexSet) {
-    for offset in offsets {
-        let theGoals = GoalItem[title: offset]
-        ModelContext.delete(theGoals)
+    func deleteGoal(at offsets: IndexSet) {
+        for offset in offsets {
+            let goalItem = theGoals[offset]
+            modelContext.delete(goalItem)
+        }
     }
 }
- */
+
+
 
 
 #Preview {
