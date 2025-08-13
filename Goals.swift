@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
-
+import SwiftData
 struct Goals: View {
     @State private var showNewGoal = false
+    @Query var theGoals: [GoalItem]
     var body: some View {
         ZStack {
             Color.blue.opacity(0.2)
@@ -42,6 +43,12 @@ struct Goals: View {
             }//end of VStack
             if showNewGoal {
                 NewGoalsView()
+            }
+            Spacer()
+            List {
+                ForEach(theGoals) { GoalItem in
+                    Text(GoalItem.title)
+                }
             }
         }//end of ZStack
     }
