@@ -35,7 +35,8 @@ struct ContentView: View {
                 } // end of ZStack
                 ZStack{
                     Color.blue.opacity(0.2)
-                        .ignoresSafeArea(edges: .all)
+                        .cornerRadius(15)
+                        //.ignoresSafeArea(edges: .all)
                     VStack (spacing: 10){
                         HStack{
                             Text("Our Mission")
