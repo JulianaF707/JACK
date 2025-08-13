@@ -1,10 +1,3 @@
-//
-//  EnglishPage.swift
-//  JACK
-//
-//  Created by Scholar on 8/12/25.
-//
-
 import SwiftUI
 
 struct EnglishPage: View {
@@ -43,7 +36,7 @@ struct EnglishPage: View {
                                     Image("alexander")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .frame(width: 250, height: 450)
+                                        .frame(width: 200, height: 200)
                                 }
                             }
                         Text("Second Grade")
@@ -124,76 +117,76 @@ struct EnglishPage: View {
                         Text("Fifth Grade")
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 10) {
-                                Image("greeneggs")
+                                Image("wonder")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 170, height: 300)
-                                Image("junie")
+                                Image("wayside")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("frog")
+                                Image("narnia")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("amelia")
+                                Image("crenshaw")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("alexander")
+                                Image("alice")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 250, height: 450)
+                                    .frame(width: 150, height: 250)
                             }
                         }
                         Text("Sixth Grade")
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 10) {
-                                Image("greeneggs")
+                                Image("bluedolphins")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 170, height: 300)
-                                Image("junie")
+                                Image("browngirldreaming")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("frog")
+                                Image("lemoncellos")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("amelia")
+                                Image("spacecase")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("alexander")
+                                Image("secretgarden")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 250, height: 450)
+                                    .frame(width: 250, height: 250)
                             }
                         }
                         Text("Seventh Grade")
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 10) {
-                                Image("greeneggs")
+                                Image("drankmoon")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 170, height: 300)
-                                Image("junie")
+                                Image("giver")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("frog")
+                                Image("westing")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("amelia")
+                                Image("wednesdaywars")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("alexander")
+                                Image("crossover")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 250, height: 450)
+                                    .frame(width: 250, height: 250)
                             }
                         }
                         Text("Eighth Grade")
@@ -224,26 +217,26 @@ struct EnglishPage: View {
                         Text("Ninth Grade")
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 10) {
-                                Image("greeneggs")
+                                Image("bothdie")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 170, height: 300)
-                                Image("junie")
+                                Image("micemen")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("frog")
+                                Image("romeoandjuliet")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("amelia")
+                                Image("sunstar")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 140, height: 300)
-                                Image("alexander")
+                                Image("weightsky")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 250, height: 450)
+                                    .frame(width: 250, height: 250)
                             }
                         }
                         Text("Tenth Grade")
