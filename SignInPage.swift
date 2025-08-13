@@ -15,7 +15,7 @@ struct SignInPage: View {
     @State private var fifth = ""
     var body: some View {
         VStack (alignment: .leading, spacing: 40){
-            Text("Sign In")
+            Text("Make Account")
                 .font(.title)
                 .fontWeight(.semibold)
             VStack (spacing: 25){
@@ -61,7 +61,7 @@ struct SignInPage: View {
                 }
                 HStack{
                     NavigationLink(destination: ContentView()) {
-                        Text("Submit")
+                        Text("Create")
                             .frame(alignment: .leading)
                                 .padding()
                                 .background(Color.blue)
