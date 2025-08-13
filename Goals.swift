@@ -44,16 +44,14 @@ struct Goals: View {
             }//end of VStack
            
             if showNewGoal {
-                NewGoalsView()
+                    NewGoalsView()
             }
             Spacer()
-            
-            List {
-                ForEach(theGoals) { GoalItem in
-                    Text("hi " + GoalItem.title)
-                }
-            }
-            .listStyle(.plain)
+//            List{
+//                ForEach(theGoals){ GoalItem in
+//                    Text(GoalItem.title)
+//                }
+//            }
         
         }//end of ZStack
         
