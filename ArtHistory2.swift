@@ -41,6 +41,7 @@ struct ArtHistory2: View {
                 Text("Diverse materials and methods. Often challenges ideas of what 'art' is, focusing on concept, identity, and technology.")
                 Spacer()
                 Text("Key takeaway: Art evolves with society - reflecting beliefs, technology, and culture - while continually reimagining what creativity can be.")
+                    .foregroundColor(.blue)
             } // end of VStack
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
