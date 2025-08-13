@@ -9,7 +9,7 @@ struct ContentView: View {
                     Color(red: 0/255, green: 51/255, blue: 102/255)
                         .ignoresSafeArea(edges: .all)
                         .frame(maxHeight: .infinity)
-                        .frame(height: UIScreen.main.bounds.height * (28/50))
+                        .frame(height: UIScreen.main.bounds.height * (26/50))
                     Text(" Welcome to Learn & Leaf")
                         .font(.custom("Arial", size: 42))
                         .fontWeight(.bold)

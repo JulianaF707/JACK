@@ -1,13 +1,13 @@
 //
-//  ArtHistoryLesson.swift
+//  ArtHistory2.swift
 //  JACK
 //
-//  Created by Scholar on 8/12/25.
+//  Created by Scholar on 8/13/25.
 //
 
 import SwiftUI
 
-struct ArtHistoryLesson: View {
+struct ArtHistory2: View {
     var body: some View {
         ScrollView{
             VStack (alignment: .leading, spacing: 10){
@@ -49,5 +49,5 @@ struct ArtHistoryLesson: View {
 }
 
 #Preview {
-    ArtHistoryLesson()
+    ArtHistory2()
 }
