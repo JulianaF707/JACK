@@ -18,6 +18,8 @@
 		BD2BF47E2E4BB54F00AD4DE2 /* MathPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF47D2E4BB54F00AD4DE2 /* MathPage.swift */; };
 		BD2BF4802E4BB55D00AD4DE2 /* EnglishPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BF47F2E4BB55D00AD4DE2 /* EnglishPage.swift */; };
 		BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */; };
+		BD7441512E4CF7C1007C3229 /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7441502E4CF7C1007C3229 /* LogInPage.swift */; };
+		BD7441532E4CF942007C3229 /* SignInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7441522E4CF942007C3229 /* SignInPage.swift */; };
 		BDF0ED322E4BA9810070976F /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0ED312E4BA9810070976F /* Goals.swift */; };
 		BDF0ED522E4CD66B0070976F /* NewGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0ED512E4CD66B0070976F /* NewGoalsView.swift */; };
 		BDF0ED542E4CD96B0070976F /* GoalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0ED532E4CD96B0070976F /* GoalItem.swift */; };
@@ -36,6 +38,8 @@
 		BD2BF47D2E4BB54F00AD4DE2 /* MathPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathPage.swift; sourceTree = "<group>"; };
 		BD2BF47F2E4BB55D00AD4DE2 /* EnglishPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishPage.swift; sourceTree = "<group>"; };
 		BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityTab.swift; sourceTree = "<group>"; };
+		BD7441502E4CF7C1007C3229 /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
+		BD7441522E4CF942007C3229 /* SignInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPage.swift; sourceTree = "<group>"; };
 		BDF0ED312E4BA9810070976F /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		BDF0ED512E4CD66B0070976F /* NewGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalsView.swift; sourceTree = "<group>"; };
 		BDF0ED532E4CD96B0070976F /* GoalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalItem.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				BD2BF47D2E4BB54F00AD4DE2 /* MathPage.swift */,
 				BD2BF47F2E4BB55D00AD4DE2 /* EnglishPage.swift */,
 				BD2BF42D2E4B7B2500AD4DE2 /* MenuBar.swift */,
+				BD7441522E4CF942007C3229 /* SignInPage.swift */,
+				BD7441502E4CF7C1007C3229 /* LogInPage.swift */,
 				BDF0ED312E4BA9810070976F /* Goals.swift */,
 				BDF0ED532E4CD96B0070976F /* GoalItem.swift */,
 				BDF0ED512E4CD66B0070976F /* NewGoalsView.swift */,
@@ -171,10 +177,12 @@
 				BD25C00C2E4CD07C00154F2A /* ArtHistory2.swift in Sources */,
 				BD25BFFC2E4BAC6A00154F2A /* TieDye.swift in Sources */,
 				BD25BFF42E4BA83E00154F2A /* FriendshipBraceletLesson.swift in Sources */,
+				BD7441512E4CF7C1007C3229 /* LogInPage.swift in Sources */,
 				BD2BF47C2E4BB52100AD4DE2 /* TEPage.swift in Sources */,
 				BD2BF47A2E4BB50C00AD4DE2 /* SciencePage.swift in Sources */,
 				BD2BF47E2E4BB54F00AD4DE2 /* MathPage.swift in Sources */,
 				BD70B9F12E4B7D5600E15AC6 /* CreativityTab.swift in Sources */,
+				BD7441532E4CF942007C3229 /* SignInPage.swift in Sources */,
 				BDF0ED542E4CD96B0070976F /* GoalItem.swift in Sources */,
 				BD2BF42E2E4B7B2500AD4DE2 /* MenuBar.swift in Sources */,
 				BD2BF4422E4B92AD00AD4DE2 /* EducationPage.swift in Sources */,

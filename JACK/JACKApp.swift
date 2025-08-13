@@ -11,7 +11,7 @@ import SwiftUI
 struct JACKApp: App {
     var body: some Scene {
         WindowGroup {
-            Goals()
+            ContentView()
                 
         }.modelContainer(for: GoalItem.self)
     }
