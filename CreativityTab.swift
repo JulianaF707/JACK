@@ -23,7 +23,12 @@ struct CreativityTab: View {
                     .font(.title)
                 Spacer()
                     .frame(height: 60)
-                Text("Leaf & learn is dedicated to teaching you more than just common education. Use the creativity tab to explore your own artistic interest! ")
+                Text("Leaf & learn is dedicated to teaching you")
+                Text(" more than just common education. Use the")
+                Text("creativity tab to explore your own artistic")
+                Text("interest!")
+                Spacer()
+                    .frame(height: 0)
                     .font(.custom("Arial", size: 18))
                     .font(.title2)
                     .padding()
@@ -88,7 +93,7 @@ struct CreativityTab: View {
                             }
                             
                             .padding(.bottom, 150.0)
-                            .padding(.top, 23.0)
+                            .padding(.top, 21.0)
                          
                         }
                         .padding(.bottom, 200.0)
