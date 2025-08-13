@@ -10,7 +10,6 @@ import SwiftData
 struct Goals: View {
     @State private var showNewGoal = false
     @Query var theGoals: [GoalItem]
-    @Environment(\.modelContext) var modelContext
     var body: some View {
         ZStack {
             Color.blue.opacity(0.2)
@@ -39,22 +38,34 @@ struct Goals: View {
         
                 
                 
-                
+                if theGoals.isEmpty {
+                    VStack(spacing: 8) {
+                        Spacer()
+                        Text("No goals yet").font(.headline)
+                        Text("Tap + to add your first goal.")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                        Spacer()
+                        }
+                }else {
+                    List {
+                        ForEach(theGoals) { goal in        // <- avoid shadowing the type name
+                            Text(goal.title)
+                        }
+                    }
+                    .listStyle(.plain)
+                    .scrollContentBackground(.hidden)      // <- key: remove white background
+                    .background(Color.clear)
+                }
                 
             }//end of VStack
            
-            if showNewGoal {
-                    NewGoalsView()
-            }
-            Spacer()
-//            List{
-//                ForEach(theGoals){ GoalItem in
-//                    Text(GoalItem.title)
-//                }
-//            }
+            
         
         }//end of ZStack
-        
+        .sheet(isPresented: $showNewGoal) {
+            NewGoalsView(showNewGoal: $showNewGoal, goalItem: GoalItem(title: ""))
+        }
     }
 }
 
