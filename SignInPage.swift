@@ -16,6 +16,7 @@ struct SignInPage: View {
     var body: some View {
         VStack (alignment: .leading, spacing: 40){
             Text("Make Account")
+            Text("Sign In")
                 .font(.title)
                 .fontWeight(.semibold)
             VStack (spacing: 25){
@@ -62,6 +63,7 @@ struct SignInPage: View {
                 HStack{
                     NavigationLink(destination: ContentView()) {
                         Text("Create")
+                        Text("Submit")
                             .frame(alignment: .leading)
                                 .padding()
                                 .background(Color.blue)
