@@ -22,12 +22,6 @@ struct ContentView: View {
                                 Spacer()
                                 NavigationLink(destination: MenuBar()) {
                                     
-                                    Button (""){
-                                                showingPopover = true
-                                            }
-                                            .popover(isPresented: $showingPopover) {
-                                                MenuBar()
-                                            }
                                         Image("menu2")
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
@@ -59,9 +53,8 @@ struct ContentView: View {
                 } // end of ZStack
             } // end of VStack
             
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
+            //.navigationTitle("Home")
+            //.navigationBarTitleDisplayMode(.inline)
             
         }
         
