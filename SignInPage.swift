@@ -19,7 +19,7 @@ struct SignInPage: View {
                 .ignoresSafeArea()
             VStack (alignment: .leading, spacing: 40){
                 Text("")
-                Text("Make Account")
+                Text("Create Account")
                     .font(.title)
                     .fontWeight(.semibold)
                 VStack (spacing: 25){

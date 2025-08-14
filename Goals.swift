@@ -18,10 +18,9 @@ struct Goals: View {
             
             VStack {
                 HStack {
-                    Text("                            ")
                     Text("Goals")
-                        .font(.system(size:40))
-                        .fontWeight(.bold)
+                        .font(.system(size:33))
+                        .fontWeight(.semibold)
         
                     Spacer()
                     Button {
@@ -32,9 +31,10 @@ struct Goals: View {
                     } label: {
                         Text ("+")
                             .font(.title)
+                            .padding(6)
                     }//end of button
                 }//end of 1st HStack
-                .padding()
+                .padding(30)
                 Spacer()
                 
                 if theGoals.isEmpty {
