@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct MathPage: View {
-    var questions: Array = ["3x^2 = 48. What is X/2?", ]
-    var answers: Array = [2,  ]
+    let qanda: [String: Int] = ["3x^2 = 48. What is X/2?": 2, "Angle X is supplementary with 115°, what is the measure of angle X in degrees?": 65, "What is the LCD of 27, 18, and 108?": 9, "What is the inverse of y = 4x + 5": -1/4]
+    @State private var name = ""
+    @State private var question = ""
     
     var body: some View {
         
@@ -16,10 +17,10 @@ struct MathPage: View {
                     .fontWeight(.bold)
                 Spacer()
                     .frame(height:170)
-                Text("What is 2+2?")
+                Text(question)
                 Spacer()
                     .frame(height:30)
-                TextField("Put your answer here", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                TextField("Put your answer here!", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                     .padding(20)
                     .background(Color.white)
                     .cornerRadius(10)
@@ -27,7 +28,9 @@ struct MathPage: View {
                     .frame(height:30)
                 HStack {
                     Button("Shuffle") {
-                    }
+                        question = Array(qanda.keys)[1]
+                        name = ""
+                        }
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
@@ -39,12 +42,12 @@ struct MathPage: View {
                     .cornerRadius(10)
                     .foregroundColor(Color.black)
                 }
-                Text("")
+                }
+                .padding()
             }
-            .padding()
+            
         }
     }
-}
 
 #Preview {
     MathPage()
