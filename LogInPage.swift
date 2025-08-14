@@ -12,7 +12,7 @@ struct LogInPage: View {
     @State private var second = ""
     var body: some View {
         ZStack {
-            Color(.butterYellow)
+            Color(.darkGreen)
             VStack (alignment: .leading, spacing: 40){
                 Text("")
                     .padding()
@@ -47,7 +47,7 @@ struct LogInPage: View {
                             Text("Log In")
                                 .frame(alignment: .leading)
                                 .padding()
-                                .background(Color.black)
+                                .background(.moreGreen)
                                 .foregroundColor(.white)
                                 .cornerRadius(12)
                         }
