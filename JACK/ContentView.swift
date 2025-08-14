@@ -15,7 +15,7 @@ struct ContentView: View {
                         .frame(height: UIScreen.main.bounds.height * (26/50))
 
                     // Animated Welcome Text
-                    Text("Welcome to Learn & Leaf")
+                    Text("Welcome to Leaf & Learn")
                         .font(.custom("Arial", size: 42))
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)

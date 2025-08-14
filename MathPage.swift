@@ -1,7 +1,11 @@
 import SwiftUI
 
 struct MathPage: View {
+    var questions: Array = ["3x^2 = 48. What is X/2?", ]
+    var answers: Array = [2,  ]
+    
     var body: some View {
+        
         ZStack {
             Color
                 .blue.opacity(0.2)

@@ -13,13 +13,16 @@ struct EnglishPage: View {
                         .fontWeight(.bold)
                     Spacer()
                         .frame(height:20)
-                    Text("Book Reccomendations")
+                    Text("Book Recomendations")
                         .font(.title2)
                         .fontWeight(.bold)
-                    
+                    Text("Looking for books but dont't know where to start? Click the link below to find our recommendations!")
                     NavigationLink(destination: BooksByGrade()) {
-                        Text("Looking for books? Click here for our personal book recommendations based on your grade!")
+                        Image(systemName: "link.circle.fill")
+                            .font(.largeTitle)
+                        Text("Book Recommendations")
                     }
+                    
                     .cornerRadius(10)
                     .foregroundColor(Color.black)
                     Spacer()
