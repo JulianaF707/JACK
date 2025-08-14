@@ -15,6 +15,7 @@ struct LogInPage: View {
             Color(.butterYellow)
             VStack (alignment: .leading, spacing: 40){
                 Text("")
+                    .padding()
                 Text("Log In")
                     .font(.title)
                     .fontWeight(.semibold)
@@ -46,7 +47,7 @@ struct LogInPage: View {
                             Text("Log In")
                                 .frame(alignment: .leading)
                                 .padding()
-                                .background(Color.blue)
+                                .background(Color.black)
                                 .foregroundColor(.white)
                                 .cornerRadius(12)
                         }
