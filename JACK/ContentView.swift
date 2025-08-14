@@ -45,7 +45,7 @@ struct ContentView: View {
                             Text("                                        ")
                         } // end of HStack
                         
-                        Text("The ides for Leaf & Learn is for users to feel like learning doesn’t always have to feel like school, you don’t need a teacher or a classroom to learn, just our app. We want to provide easier access to education, and make it easier to gain access to extra-help resources. Our inspiration came from our passion for education and wanting to teach others and inspire people to chase their curiosity.")
+                        Text("The idea for Leaf & Learn is for users to feel like learning doesn’t always have to feel like school, you don’t need a teacher or a classroom to learn, just our app. We want to provide easier access to education, and make it easier to gain access to extra-help resources. Our inspiration came from our passion for education and wanting to teach others and inspire people to chase their curiosity.")
                         Spacer()
                     } // end of VStack
                     .padding(.top, 30)
