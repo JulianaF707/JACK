@@ -24,6 +24,7 @@
 		BDF0ED322E4BA9810070976F /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0ED312E4BA9810070976F /* Goals.swift */; };
 		BDF0ED522E4CD66B0070976F /* NewGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0ED512E4CD66B0070976F /* NewGoalsView.swift */; };
 		BDF0ED542E4CD96B0070976F /* GoalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF0ED532E4CD96B0070976F /* GoalItem.swift */; };
+		FA23E68A2E4D611B00E8AC6B /* CodingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23E6892E4D611B00E8AC6B /* CodingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		BDF0ED312E4BA9810070976F /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		BDF0ED512E4CD66B0070976F /* NewGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalsView.swift; sourceTree = "<group>"; };
 		BDF0ED532E4CD96B0070976F /* GoalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalItem.swift; sourceTree = "<group>"; };
+		FA23E6892E4D611B00E8AC6B /* CodingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -71,6 +73,7 @@
 			children = (
 				BD2BF4792E4BB50C00AD4DE2 /* SciencePage.swift */,
 				BD2BF47B2E4BB52100AD4DE2 /* TEPage.swift */,
+				FA23E6892E4D611B00E8AC6B /* CodingPage.swift */,
 				BD70B9F02E4B7D5600E15AC6 /* CreativityTab.swift */,
 				BD25C00B2E4CD07C00154F2A /* ArtHistory2.swift */,
 				BD25BFEB2E4B966100154F2A /* BubbleDrawingLesson.swift */,
@@ -181,6 +184,7 @@
 				BD25C00C2E4CD07C00154F2A /* ArtHistory2.swift in Sources */,
 				BD25BFFC2E4BAC6A00154F2A /* TieDye.swift in Sources */,
 				BD25BFF42E4BA83E00154F2A /* FriendshipBraceletLesson.swift in Sources */,
+				FA23E68A2E4D611B00E8AC6B /* CodingPage.swift in Sources */,
 				BD7441512E4CF7C1007C3229 /* LogInPage.swift in Sources */,
 				BD2BF47C2E4BB52100AD4DE2 /* TEPage.swift in Sources */,
 				BD2BF47A2E4BB50C00AD4DE2 /* SciencePage.swift in Sources */,

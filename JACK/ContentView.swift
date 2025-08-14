@@ -1,41 +1,51 @@
 import SwiftUI
+
 struct ContentView: View {
     @State private var showingPopover = false
-    
+    @State private var animateWelcome = false // For the welcome text animation
+
     var body: some View {
         NavigationStack {
             VStack (spacing: 0.0){
                 ZStack {
+                    // Top background color
                     Color(red: 0/255, green: 51/255, blue: 102/255)
                         .ignoresSafeArea(edges: .all)
                         .frame(maxHeight: .infinity)
                         .frame(height: UIScreen.main.bounds.height * (26/50))
-                    Text(" Welcome to Learn & Leaf")
+
+                    // Animated Welcome Text
+                    Text("Welcome to Learn & Leaf")
                         .font(.custom("Arial", size: 42))
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                         .padding(20.0)
-                    
-                    VStack {
-                            HStack {
-                                Spacer()
-                                NavigationLink(destination: MenuBar()) {
-                                    
-                                        Image("menu2")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 60, height: 60)
-                                            .padding()
+                        .opacity(animateWelcome ? 1 : 0)
+                        .offset(y: animateWelcome ? 0 : 40)
+                        .animation(.easeOut(duration: 1.0), value: animateWelcome)
 
-                                }
-                            } // end of HStack
+                    // Menu Button in the top right
+                    VStack {
+                        HStack {
                             Spacer()
-                        } // end of VStack
+                            NavigationLink(destination: MenuBar()) {
+                                Image("menu2")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 60, height: 60)
+                                    .padding()
+                            }
+                        }
+                        Spacer()
+                    }
                 } // end of ZStack
+
                 ZStack{
+                    // Lower background color
                     Color.blue.opacity(0.2)
                         .ignoresSafeArea(edges: .all)
+
                     VStack (spacing: 10){
                         HStack{
                             Text("Our Mission")
@@ -44,7 +54,7 @@ struct ContentView: View {
                                 .multilineTextAlignment(.leading)
                             Text("                                        ")
                         } // end of HStack
-                        
+
                         Text("The idea for Leaf & Learn is for users to feel like learning doesn’t always have to feel like school, you don’t need a teacher or a classroom to learn, just our app. We want to provide easier access to education, and make it easier to gain access to extra-help resources. Our inspiration came from our passion for education and wanting to teach others and inspire people to chase their curiosity.")
                         Spacer()
                     } // end of VStack
@@ -52,15 +62,18 @@ struct ContentView: View {
                     .padding(.horizontal, 30)
                 } // end of ZStack
             } // end of VStack
-            
-            //.navigationTitle("Home")
-            //.navigationBarTitleDisplayMode(.inline)
-            
         }
+
+        .onAppear {
+            animateWelcome = true // Start the animation when the view appears
+        }
+
         .navigationBarBackButtonHidden(true)
+
     }
 
 }
+
 #Preview {
     ContentView()
 }
