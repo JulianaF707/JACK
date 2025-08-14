@@ -7,7 +7,7 @@ struct TEPage: View {
             Color
                 .blue.opacity(0.2)
                 .ignoresSafeArea()
-            VStack (spacing: 30){
+            VStack (alignment: .leading, spacing: 30){
                 Text("Technology & Engineering")
                     .font(.largeTitle)
                     .fontWeight(.bold)
