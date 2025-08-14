@@ -14,69 +14,83 @@ struct SignInPage: View {
     @State private var fourth = ""
     @State private var fifth = ""
     var body: some View {
-        VStack (alignment: .leading, spacing: 40){
-            Text("Make Account")
-            Text("Sign In")
-                .font(.title)
-                .fontWeight(.semibold)
-            VStack (spacing: 25){
-                VStack(alignment: .leading){
-                    Text("Full Name:")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                    TextField("Name...", text: $first)
-                        .border(Color.gray, width:1)
-                        .font(.title3)
-                }
-                VStack(alignment: .leading){
-                    Text("Email Adress:")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                    TextField("Email...", text: $second)
-                        .border(Color.gray, width:1)
-                        .font(.title3)
-                }
-                VStack(alignment: .leading){
-                    Text("Choose a Username:")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                    TextField("Username...", text: $third)
-                        .border(Color.gray, width:1)
-                        .font(.title3)
-                }
-                VStack(alignment: .leading){
-                    Text("Choose a Password:")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                    TextField("Password...", text: $fourth)
-                        .border(Color.gray, width:1)
-                        .font(.title3)
-                }
-                VStack(alignment: .leading){
-                    Text("Confirm Password:")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                    TextField("Confirm...", text: $fifth)
-                        .border(Color.gray, width:1)
-                        .font(.title3)
-                }
-                HStack{
-                    NavigationLink(destination: ContentView()) {
-                        Text("Create")
-                        Text("Submit")
-                            .frame(alignment: .leading)
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(12)
+        ZStack{
+            Color(.darkGreen)
+                .ignoresSafeArea()
+            VStack (alignment: .leading, spacing: 40){
+                Text("")
+                Text("Make Account")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                VStack (spacing: 25){
+                    VStack(alignment: .leading){
+                        Text("Full Name:")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                        TextField("Name...", text: $first)
+                            .padding()
+                            .background(Color(.systemGroupedBackground))
+                            .cornerRadius(15)
+                            .font(.title3)
                     }
-                    Spacer()
-                } // end of HStack
-                
+                    VStack(alignment: .leading){
+                        Text("Email Adress:")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                        TextField("Email...", text: $second)
+                            .padding()
+                            .background(Color(.systemGroupedBackground))
+                            .cornerRadius(15)
+                            .font(.title3)
+                    }
+                    VStack(alignment: .leading){
+                        Text("Choose a Username:")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                        TextField("Username...", text: $third)
+                            .padding()
+                            .background(Color(.systemGroupedBackground))
+                            .cornerRadius(15)
+                            .font(.title3)
+                    }
+                    VStack(alignment: .leading){
+                        Text("Choose a Password:")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                        TextField("Password...", text: $fourth)
+                            .padding()
+                            .background(Color(.systemGroupedBackground))
+                            .cornerRadius(15)
+                            .font(.title3)
+                    }
+                    VStack(alignment: .leading){
+                        Text("Confirm Password:")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                        TextField("Confirm...", text: $fifth)
+                            .padding()
+                            .background(Color(.systemGroupedBackground))
+                            .cornerRadius(15)
+                            .font(.title3)
+                    }
+                    HStack{
+                        NavigationLink(destination: ContentView()) {
+                            Text("Create")
+                                .frame(alignment: .leading)
+                                    .padding()
+                                    .background(Color.moreGreen)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(12)
+                        }
+                        Spacer()
+                    } // end of HStack
+                    
+                } // end of VStack
+                Spacer()
             } // end of VStack
-            Spacer()
-        } // end of VStack
-        .padding()
+            .padding()
+        } // end of ZStack
+        
     }
 }
 

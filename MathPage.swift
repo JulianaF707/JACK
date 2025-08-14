@@ -12,11 +12,15 @@ struct MathPage: View {
                     .fontWeight(.bold)
                 Spacer()
                     .frame(height:170)
-                Text("what is 2+2?")
+                Text("What is 2+2?")
+                Spacer()
+                    .frame(height:30)
                 TextField("Put your answer here", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                     .padding(20)
                     .background(Color.white)
                     .cornerRadius(10)
+                Spacer()
+                    .frame(height:30)
                 HStack {
                     Button("Shuffle") {
                     }

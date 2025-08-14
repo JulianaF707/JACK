@@ -63,10 +63,15 @@ struct ContentView: View {
                 } // end of ZStack
             } // end of VStack
         }
+
         .onAppear {
             animateWelcome = true // Start the animation when the view appears
         }
+
+        .navigationBarBackButtonHidden(true)
+
     }
+
 }
 
 #Preview {
