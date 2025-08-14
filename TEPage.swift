@@ -20,11 +20,14 @@ struct TEPage: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                         Text("Technology refers to the tools, systems, and methods humans create to solve problems, improve efficiency, and enhance daily life. It encompasses everything from simple inventions like the wheel to advanced fields like artificial intelligence, and it evolves continuously as new discoveries and innovations emerge.")
-                        Link(destination: URL(string: "https://www.topuniversities.com/courses/engineering/which-type-engineering-should-you-study")!) {
-                                   Image(systemName: "link.circle.fill")
-                                       .font(.largeTitle)
+                        
+                        NavigationLink(destination: CodingPage()) {
+                            Image(systemName: "link.circle.fill")
+                                .foregroundColor(Color.linkGreen)
+                                .font(.largeTitle)
                             Text("Click here for a coding lesson!")
-                               }
+                                .foregroundColor(Color.linkGreen)
+                        }
                     } // end of VStack
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
